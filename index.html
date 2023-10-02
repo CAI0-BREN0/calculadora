@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora da Gorjeta</title>
+
+    <link rel="preconnect" href="https://fonts.gooleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.gooleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" 
+    rel="styleshett" 
+    />
+    <link rel="stylesheet" href="style.css" />
+<body>
+    <div class="logo"><img src="imagens/Logo2.png" alt=""></div>
+    <div class="tip-calculator">
+        <div class="partOne">
+            <label for="">Valor da Compra</label>
+            <input type="number" class="input bill-input" id="bill-input">
+            <label for="">Selecione a %.</label>
+            <div class="tip">
+                <div class="tips tip-5">5%</div>
+                <div class="tips tip-10">10%</div>
+                <div class="tips tip-15 active-tip">15%</div>
+                <div class="tips tip-25">25%</div>
+                <div class="tips tip-50">50%</div>
+                <div id="tip-custom"></div><input type="number" class="tip-custom" placeholder="CUSTOM" ></div>
+            </div>
+            <div class="peopleLabel">
+                <label for="">Número de Pessoas</label>
+                <label for="" class="error">Não pode ser Zero.</label>
+            </div>
+            <input type="number" class="input people-input">
+            
+            <div class="result">
+                <div class="tip-amount">
+                    <div class="text">
+                        <p>Valor da Gorjeta:</p>
+                        <p class="person">Por Pessoa</p>
+                    </div>
+                    <div class="amount" id="tip-amount">$ 4.27</div>
+                </div>
+                <div class="total">
+                    <div class="text">
+                        <p>Total</p>
+                        <p class="person">Por Pessoa</p>
+                    </div>
+                    <div class="amount" id="total-amount">$ 32.79</div>
+                </div>
+                <div class="reset">Reset</div>
+            </div>
+        </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
